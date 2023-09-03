@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <div class="left">
@@ -31,30 +32,35 @@
               <input type="text" name="first-name" id="first-name" required>
             </div>
             <div>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required>
+              <label for="last-name">Last Name</label>
+              <input type="text" name="last-name" id="last-name" required>
             </div>
-            <div>
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" required>
-            </div>
-            <button type="submit">Create Account</button>
           </div>
           
           <div class="form-div">
             <div>
-              <label for="last-name">Last Name</label>
-              <input type="text" name="last-name" id="last-name" required>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
             </div>
             <div>
               <label for="phone-number">Phone Number</label>
               <input type="tel" name="phone-number" id="phone-number">
+            </div>
+          </div>
+
+          <div class="form-div">
+            <div>
+              <label for="password">Password</label>
+              <input pattern=".{8,}" type="password" name="password" id="password" required>
+              <p class="password-message"></p>
             </div>
             <div>
               <label for="confirm-password">Confirm Password</label>
               <input type="password" name="confirm-password" id="confirm-password" required>
             </div>
           </div>
+
+          <button type="submit">Create Account</button>
         </div>
       </form>
 
